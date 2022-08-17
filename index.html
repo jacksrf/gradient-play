@@ -51,8 +51,19 @@ svg {
 
 <body class="home page-template-default page page-id-10 animated-in animated-in-completed animated-in-reset" style="">
   <div class="header_slide">
-    <img src="./header-clip.png"/>
-    <svg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'>
+    <div class="header_holder">
+
+
+      <div class="circles">
+        <div class="circle" id="circle1" style="background-image: url('./red.png');"></div>
+        <div class="circle" id="circle2" style="background-image: url('./orange.png');"></div>
+        <div class="circle" id="circle3" style="background-image: url('./green.png');"></div>
+        <div class="circle" id="circle4" style="background-image: url('./blue.png');"></div>
+        <div class="circle" id="circle5" style="background-image: url('./red.png');"></div>
+      </div>
+    </div>
+
+    <svg id="grain_background" viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'>
       <filter id='noiseFilter'>
         <feTurbulence
           type='fractalNoise'
@@ -60,7 +71,6 @@ svg {
           numOctaves='3'
           stitchTiles='stitch'/>
       </filter>
-
       <rect width='100%' height='100%' filter='url(#noiseFilter)'/>
     </svg>
   </div>
