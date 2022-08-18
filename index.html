@@ -362,7 +362,7 @@ body.circle4, body.circle4 .circle  {
           console.log('NEXT')
           var lastID = $('.circles .circle:first').attr('id')
           var newID = $('.circles .circle:last').attr('id')
-          $('.circles').prepend($('.circles .circle:last'))
+          $('.circles').prepend($('.circles .circle:last').css({ 'width': '80%', 'height': '80%'}))
           $('body').removeClass(lastID)
           $('body').addClass(newID)
         })
