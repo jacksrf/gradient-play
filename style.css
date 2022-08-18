@@ -1,0 +1,121 @@
+body.home.page-template-default.page.page-id-10.animated-in.animated-in-completed.animated-in-reset {
+  margin: 0px;
+}
+
+#canvas, canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+z-index: 1;
+}
+
+svg#grain_background {
+  position: absolute;
+  z-index: 2;
+  opacity: .125;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.penta_logo {
+  padding: 40px 60px;
+}
+
+.penta_logo svg path {
+  fill: white;
+}
+
+.circles {
+  width: 100vh;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.circle {
+position: absolute;
+top: 0;
+bottom: 0;
+left: 0;
+right: 0;
+margin: auto;
+transition: all 300ms;
+-webkit-transition: all 300ms;
+}
+
+.circle:nth-child(1) {
+  opacity: .1;
+  width: 100%;
+  height: 100%;
+  background-size: contain;
+  background-position: center;
+  z-index: 1;
+}
+
+.circle:nth-child(2) {
+  opacity: .3;
+  width: 80%;
+  height: 80%;
+  background-size: contain;
+  background-position: center;
+  z-index: 2;
+}
+
+.circle:nth-child(3) {
+  opacity: .5;
+  width: 60%;
+  height: 60%;
+  background-size: contain;
+  background-position: center;
+  z-index: 3;
+}
+
+.circle:nth-child(4) {
+  opacity: .7;
+  width: 40%;
+  height: 40%;
+  background-size: contain;
+  background-position: center;
+  z-index: 4;
+}
+
+.circle:nth-child(5) {
+  opacity: 1;
+  width: 20%;
+  height: 20%;
+  background-size: contain;
+  background-position: center;
+  z-index: 5;
+}
+
+.header_holder {
+  width: 100%;
+  height: 100vh;
+  float: left;
+  position: relative;
+}
+
+.header_slide {
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 1000000;
+  height: 100%;
+  width: 100%;
+}
+.header_slide img {
+  width: 100%;
+}
+
+.other {
+  width: 100%;
+  height: 100vh;
+  background: white;
+  position: relative;
+  z-index: 1000;
+}
