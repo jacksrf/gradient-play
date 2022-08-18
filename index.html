@@ -119,6 +119,15 @@
     opacity: 1;
   }
 
+  .change_circles {
+    position: absolute;
+    bottom: 50px;
+    left: 50px;
+    color: white;
+    font-family: basis grotesque pro;
+    cursor: pointer;
+}
+
   .header_holder {
     width: 100%;
     height: 100vh;
@@ -300,6 +309,13 @@
             gl_FragColor = vec4(color, 1.0);
         }
     </script>
-<script type="module" src="./gradient.js"></script>
+    <script type="module" src="./gradient.js"></script>
+    <script>
+      $(window).on('load', function() {
+        $('.change_circles').click(function() {
+          $('.circle:last-child').prependTo($('.circle:last-child').parent()); 
+        })
+      })
+    </script>
 
 </html>
