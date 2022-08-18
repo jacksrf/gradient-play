@@ -368,9 +368,9 @@ body.circle4, body.circle4 .circle  {
           var lastID = $('.circles .circle:first').attr('id')
           var newID = $('.circles .circle:last').attr('id')
           $('.circles').prepend($('.circles .circle:last').addClass('tempLast'))
-          setTimeout(function() {
+          // setTimeout(function() {
             $('.circles .circle.tempLast').removeClass('tempLast')
-          }, 10)
+          // }, 10)
           $('body').removeClass(lastID)
           $('body').addClass(newID)
         })
