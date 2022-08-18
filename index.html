@@ -250,7 +250,7 @@ body.circle4, body.circle4 .circle  {
       <div class="change_circles">NEXT</div>
     </div>
 
-    <svg id="grain_background" viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'>
+    <!-- <svg id="grain_background" viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'>
       <filter id='noiseFilter'>
         <feTurbulence
           type='fractalNoise'
@@ -259,7 +259,7 @@ body.circle4, body.circle4 .circle  {
           stitchTiles='stitch'/>
       </filter>
       <rect width='100vw' height='100vh' filter='url(#noiseFilter)'/>
-    </svg>
+    </svg> -->
   </div>
   <div class="other">
   </div>
@@ -363,19 +363,7 @@ body.circle4, body.circle4 .circle  {
     </script>
     <script type="module" src="./gradient.js"></script>
     <script>
-      $(window).on('load', function() {
-        $('.change_circles').click(function() {
-          console.log('NEXT')
-          var lastID = $('.circles .circle:first').attr('id')
-          var newID = $('.circles .circle:last').attr('id')
-          $('.circles').prepend($('.circles .circle:last').addClass('tempLast'))
-          setTimeout(function() {
-            $('.circles .circle.tempLast').removeClass('tempLast')
-          }, 1)
-          $('body').removeClass(lastID)
-          $('body').addClass(newID)
-        })
-      })
+    
     </script>
 
 </html>

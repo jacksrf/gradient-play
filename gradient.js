@@ -126,3 +126,17 @@ document.addEventListener("DOMContentLoaded", function(e) {
     animate();
 
 });
+
+$(window).on('load', function() {
+  $('.change_circles').click(function() {
+    console.log('NEXT')
+    var lastID = $('.circles .circle:first').attr('id')
+    var newID = $('.circles .circle:last').attr('id')
+    $('.circles').prepend($('.circles .circle:last').addClass('tempLast'))
+    setTimeout(function() {
+      $('.circles .circle.tempLast').removeClass('tempLast')
+    }, 1)
+    $('body').removeClass(lastID)
+    $('body').addClass(newID)
+  })
+})
