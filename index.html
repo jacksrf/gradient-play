@@ -30,6 +30,26 @@
     fill: white;
   }
 
+  .slide1 .penta_logo svg path {
+    fill: #3D95FF;
+  }
+
+  .slide2 .penta_logo svg path {
+    fill: #FF0039;
+  }
+
+  .slide3 .penta_logo svg path {
+    fill: #FF9900;
+  }
+
+  .slide4 .penta_logo svg path {
+    fill: #88FFC3;
+  }
+
+  .slide5 .penta_logo svg path {
+    fill: white;
+  }
+
   .circles {
       width: 140vh;
       height: 140vh;
@@ -166,7 +186,7 @@
   <link href="./gradient.min.css"></link>
 </head>
 
-<body class="home page-template-default page page-id-10 animated-in animated-in-completed animated-in-reset" style="">
+<body class="home page-template-default page page-id-10 animated-in animated-in-completed animated-in-reset slide1" style="">
   <div class="header_slide">
     <div class="header_holder">
       <div class="penta_logo">
@@ -316,7 +336,11 @@
       $(window).on('load', function() {
         $('.change_circles').click(function() {
           console.log('NEXT')
+          var lastID = $('.circles .circle:first').attr('id')
+          var newID = $('.circles .circle:last').attr('id')
           $('.circles').prepend($('.circles .circle:last'))
+          $('body').removeClass(lastID)
+          $('body').addClass(newID)
         })
       })
     </script>
