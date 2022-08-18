@@ -116,7 +116,7 @@ document.addEventListener("DOMContentLoaded", function(e) {
         mesh.material.uniforms.u_randomisePosition.value = new THREE.Vector2(j, j);
         // console.log(colorsArray[Math.round(t)])
         mesh.material.uniforms.u_color1.value = new THREE.Vector3(colorsArray[Math.round(t)][0],colorsArray[Math.round(t)][1],colorsArray[Math.round(t)][2]);
-console.log(mesh.material.uniforms.u_color1.value)
+// console.log(mesh.material.uniforms.u_color1.value)
         mesh.material.uniforms.u_time.value = t;
         if(t % 0.1 == 0) {
             if(vCheck == false) {
