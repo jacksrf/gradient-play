@@ -37,9 +37,9 @@ var colorsArray = interpolateColors("rgb(0, 48, 91)", "rgb(0, 52, 125)", 1000);
 
 // var boom = gradient('00305b', '00347d', 1000);
 var direction = "increase";
-var minG = 50;
-var maxG = 200
-var lastG = 50;
+var minG = 155;
+var maxG = 255
+var lastG = 155;
 document.addEventListener("DOMContentLoaded", function(e) {
 
     const renderer = new THREE.WebGLRenderer();
@@ -56,24 +56,24 @@ document.addEventListener("DOMContentLoaded", function(e) {
     var randomisePosition = new THREE.Vector2(1, 2);
 
     var R = function(x, y, t) {
-       return 50 + x;
+       return 155 + x;
     }
 
     var G = function(x, y, t) {
-      return 50 + x;
+      return 155 + x;
     }
 
     var B = function(x, y, t) {
-      return 50 + x;
+      return 155 + x;
     }
     let sNoise = document.querySelector('#snoise-function').textContent
     let geometry = new THREE.PlaneGeometry(window.innerWidth / 2, 400, 100, 100);
     let material = new THREE.ShaderMaterial({
         uniforms: {
-            u_bg: {type: 'v3', value: rgb(120, 120, 120)},
-            u_bgMain: {type: 'v3', value: rgb(120, 120, 120)},
-            u_color1: {type: 'v3', value: rgb(120, 120, 120)},
-            u_color2: {type: 'v3', value: rgb(200, 200, 200)},
+            u_bg: {type: 'v3', value: rgb(155, 155, 155)},
+            u_bgMain: {type: 'v3', value: rgb(155, 155, 155)},
+            u_color1: {type: 'v3', value: rgb(155, 155, 155)},
+            u_color2: {type: 'v3', value: rgb(255, 255, 255)},
             u_time: {type: 'f', value: 30},
             u_randomisePosition: { type: 'v2', value: randomisePosition }
         },
@@ -112,7 +112,7 @@ document.addEventListener("DOMContentLoaded", function(e) {
                 }
             } else {
                 x += 1;
-                if(x >= 1500) {
+                if(x >= 1000) {
                     vCheck = false;
                 }
 
