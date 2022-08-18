@@ -37,12 +37,9 @@ var colorsArray = interpolateColors("rgb(0, 48, 91)", "rgb(0, 52, 125)", 1000);
 
 // var boom = gradient('00305b', '00347d', 1000);
 var direction = "increase";
-var minG = 48;
-var maxG = 52
-var minB = 91;
-var maxB = 125
-var lastG = 48;
-var lastB = 91;
+var minG = 120;
+var maxG = 200
+var lastG = 120;
 document.addEventListener("DOMContentLoaded", function(e) {
 
     const renderer = new THREE.WebGLRenderer();
@@ -59,37 +56,24 @@ document.addEventListener("DOMContentLoaded", function(e) {
     var randomisePosition = new THREE.Vector2(1, 2);
 
     var R = function(x, y, t) {
-        return( 0);
-      // return( Math.floor(192 + 64*Math.cos( (x*x-y*y)/300 + t )) );
+       return 120 + x;
     }
 
     var G = function(x, y, t) {
-        // return( 48);
-      if (direction === 'increase') {
-
-      } else {
-
-      }
-        // return( Math.floor(192 + 64*Math.sin( (x*x*Math.cos(t/4)+y*y*Math.sin(t/3))/300 ) ) );
+      return 120 + x;
     }
 
     var B = function(x, y, t) {
-        // return( 91);
-      if (direction === 'increase') {
-
-      } else {
-
-      }
-        // return( Math.floor(192 + 64*Math.sin( 5*Math.sin(t/9) + ((x-100)*(x-100)+(y-100)*(y-100))/1100) ));
+      return 120 + x;
     }
     let sNoise = document.querySelector('#snoise-function').textContent
     let geometry = new THREE.PlaneGeometry(window.innerWidth / 2, 400, 100, 100);
     let material = new THREE.ShaderMaterial({
         uniforms: {
-            u_bg: {type: 'v3', value: rgb(0, 14, 35)},
-            u_bgMain: {type: 'v3', value: rgb(0, 14, 35)},
-            u_color1: {type: 'v3', value: rgb(0, 14, 35)},
-            u_color2: {type: 'v3', value: rgb(0, 18, 45)},
+            u_bg: {type: 'v3', value: rgb(120, 120, 120)},
+            u_bgMain: {type: 'v3', value: rgb(120, 120, 120)},
+            u_color1: {type: 'v3', value: rgb(120, 120, 120)},
+            u_color2: {type: 'v3', value: rgb(200, 200, 200)},
             u_time: {type: 'f', value: 30},
             u_randomisePosition: { type: 'v2', value: randomisePosition }
         },
@@ -115,7 +99,9 @@ document.addEventListener("DOMContentLoaded", function(e) {
         renderer.render( scene, camera );
         mesh.material.uniforms.u_randomisePosition.value = new THREE.Vector2(j, j);
         // console.log(colorsArray[Math.round(t)])
-        mesh.material.uniforms.u_color1.value = new THREE.Vector3(colorsArray[Math.round(t)][0],colorsArray[Math.round(t)][1],colorsArray[Math.round(t)][2]);
+        mesh.material.uniforms.u_color1.value = new THREE.Vector3(colorsArray[R(x,y,t),G(x,y,t),B(x,y,t));
+
+        // mesh.material.uniforms.u_color1.value = new THREE.Vector3(colorsArray[Math.round(t)][0],colorsArray[Math.round(t)][1],colorsArray[Math.round(t)][2]);
 // console.log(mesh.material.uniforms.u_color1.value)
         mesh.material.uniforms.u_time.value = t;
         if(t % 0.1 == 0) {
@@ -126,7 +112,7 @@ document.addEventListener("DOMContentLoaded", function(e) {
                 }
             } else {
                 x += 1;
-                if(x >= 1000) {
+                if(x >= 800) {
                     vCheck = false;
                 }
 
