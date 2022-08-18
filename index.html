@@ -163,6 +163,11 @@ body.circle4, body.circle4 .circle  {
     opacity: .7;
   }
 
+  .circle:nth-child(1).tempLast {
+    width: 80%;
+    height: 80%;
+}
+
   .change_circles {
       position: absolute;
       bottom: 50px;
@@ -363,7 +368,7 @@ body.circle4, body.circle4 .circle  {
           var lastID = $('.circles .circle:first').attr('id')
           var newID = $('.circles .circle:last').attr('id')
           $('.circles').prepend($('.circles .circle:last').addClass('tempLast'))
-          
+
           $('body').removeClass(lastID)
           $('body').addClass(newID)
         })
