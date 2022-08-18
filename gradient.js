@@ -99,7 +99,7 @@ document.addEventListener("DOMContentLoaded", function(e) {
         renderer.render( scene, camera );
         mesh.material.uniforms.u_randomisePosition.value = new THREE.Vector2(j, j);
         // console.log(colorsArray[Math.round(t)])
-        mesh.material.uniforms.u_color1.value = new THREE.Vector3(colorsArray[R(x,y,t),G(x,y,t),B(x,y,t));
+        mesh.material.uniforms.u_color1.value = new THREE.Vector3( R(x,y,t), G(x,y,t), B(x,y,t) );
 
         // mesh.material.uniforms.u_color1.value = new THREE.Vector3(colorsArray[Math.round(t)][0],colorsArray[Math.round(t)][1],colorsArray[Math.round(t)][2]);
 // console.log(mesh.material.uniforms.u_color1.value)
