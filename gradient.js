@@ -68,6 +68,7 @@ document.addEventListener("DOMContentLoaded", function(e) {
     }
     let sNoise = document.querySelector('#snoise-function').textContent
     let geometry = new THREE.PlaneGeometry(window.innerWidth / 2, 400, 100, 100);
+    console.log(document.querySelector('#fragment-shader').textContent)
     let material = new THREE.ShaderMaterial({
         uniforms: {
             u_bg: {type: 'v3', value: rgb(155, 155, 155)},
