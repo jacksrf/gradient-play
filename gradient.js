@@ -37,9 +37,9 @@ var colorsArray = interpolateColors("rgb(0, 48, 91)", "rgb(0, 52, 125)", 1000);
 
 // var boom = gradient('00305b', '00347d', 1000);
 var direction = "increase";
-var minG = 120;
+var minG = 50;
 var maxG = 200
-var lastG = 120;
+var lastG = 50;
 document.addEventListener("DOMContentLoaded", function(e) {
 
     const renderer = new THREE.WebGLRenderer();
@@ -56,15 +56,15 @@ document.addEventListener("DOMContentLoaded", function(e) {
     var randomisePosition = new THREE.Vector2(1, 2);
 
     var R = function(x, y, t) {
-       return 120 + x;
+       return 50 + x;
     }
 
     var G = function(x, y, t) {
-      return 120 + x;
+      return 50 + x;
     }
 
     var B = function(x, y, t) {
-      return 120 + x;
+      return 50 + x;
     }
     let sNoise = document.querySelector('#snoise-function').textContent
     let geometry = new THREE.PlaneGeometry(window.innerWidth / 2, 400, 100, 100);
@@ -112,7 +112,7 @@ document.addEventListener("DOMContentLoaded", function(e) {
                 }
             } else {
                 x += 1;
-                if(x >= 800) {
+                if(x >= 1500) {
                     vCheck = false;
                 }
 
