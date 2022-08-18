@@ -313,7 +313,7 @@
     <script>
       $(window).on('load', function() {
         $('.change_circles').click(function() {
-          $('.circle:last-child').prependTo($('.circle:last-child').parent()); 
+          $('.circles').prepend($('.circles .circle:last'))
         })
       })
     </script>
