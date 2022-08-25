@@ -1,0 +1,208 @@
+body {
+  margin: 0px;
+  transition: all 1200ms;
+  -webkit-transition: all 1200ms;
+}
+
+#canvas, canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: .2;
+}
+
+svg#grain_background {
+  position: absolute;
+  z-index: 2;
+  opacity: .125;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.penta_logo {
+  padding: 40px 60px;
+}
+
+.penta_logo svg path {
+  fill: white;
+  transition: all 1200ms;
+  -webkit-transition: all 1200ms;
+}
+
+.circle1 .penta_logo svg path {
+  fill: #3D95FF;
+}
+
+.circle2 .penta_logo svg path {
+  fill: #FF0039;
+}
+
+.circle3 .penta_logo svg path {
+  fill: #FF9900;
+}
+
+.circle4 .penta_logo svg path {
+  fill: #88FFC3;
+}
+
+.circle5 .penta_logo svg path {
+  fill: white;
+}
+
+body.circle1, body.circle1 .circle  {
+  background: rgb(0,48,91);
+}
+
+body.circle2, body.circle2 .circle  {
+  background: #480000;
+}
+
+body.circle3, body.circle3 .circle  {
+  background: #972C17;
+}
+
+body.circle4, body.circle4 .circle  {
+  background: #025E4E;
+}
+
+body.circle5,  body.circle5 .circle {
+  background: rgba(0,0,0,.5);
+}
+
+.circles {
+    width: 140vh;
+    height: 140vh;
+    position: absolute;
+    top: -20vh;
+    right: calc(-20vh - 7.5vw);
+}
+
+.circle {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    transition: all 1200ms;
+    -webkit-transition: all 1200ms;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.inner_circle {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+.circle:nth-child(1) {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  z-index: 1;
+}
+
+.circle:nth-child(1) div {
+  opacity: .1;
+}
+
+.circle:nth-child(2) {
+  width: 80%;
+  height: 80%;
+  background-size: cover;
+  background-position: center;
+  z-index: 2;
+}
+
+.circle:nth-child(2) div {
+  opacity: .3;
+}
+
+.circle:nth-child(3) {
+  width: 60%;
+  height: 60%;
+  background-size: cover;
+  background-position: center;
+  z-index: 3;
+}
+
+.circle:nth-child(3) div {
+  opacity: .3;
+}
+
+.circle:nth-child(4) {
+  width: 40%;
+  height: 40%;
+  background-size: cover;
+  background-position: center;
+  z-index: 4;
+}
+
+.circle:nth-child(4) div {
+  opacity: .3;
+}
+
+.circle:nth-child(5) {
+  width: 20%;
+  height: 20%;
+  background-size: cover;
+  background-position: center;
+  z-index: 5;
+}
+
+.circle:nth-child(5) div {
+  opacity: .7;
+}
+
+.circle:nth-child(1).tempLast {
+  width: 80%;
+  height: 80%;
+}
+
+.change_circles {
+    position: absolute;
+    bottom: 50px;
+    left: 50px;
+    color: white;
+    font-family: basis grotesque pro;
+    cursor: pointer;
+    z-index: 10000;
+    font-size: 30px;
+}
+
+.header_holder {
+  width: 100%;
+  height: 100vh;
+  float: left;
+  position: relative;
+}
+
+.header_slide {
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 1000000;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.header_slide img {
+  width: 100%;
+}
+
+.other {
+  width: 100%;
+  height: 100vh;
+  background: white;
+  position: relative;
+  z-index: 1000;
+}
