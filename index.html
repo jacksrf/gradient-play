@@ -75,13 +75,14 @@ body.circle4, body.circle4 .circle  {
     background: rgba(0,0,0,.5);
 }
 
-  .circles {
-      width: 140vh;
-      height: 140vh;
-      position: absolute;
-      top: -20vh;
-      right: calc(-20vh - 7.5vw);
-  }
+.circles {
+    width: 140vw;
+    height: 140vw;
+    position: absolute;
+    top: -40vw;
+    left: 5vw;
+    z-index: -1;
+}
 
   .circle {
       position: absolute;
@@ -161,6 +162,42 @@ body.circle4, body.circle4 .circle  {
 
   .circle:nth-child(5) div {
     opacity: .7;
+  }
+
+  .circle:nth-child(6) {
+    width: 80%;
+    height: 80%;
+    background-size: cover;
+    background-position: center;
+    z-index: 2;
+  }
+
+  .circle:nth-child(6) div {
+    opacity: .3;
+  }
+
+  .circle:nth-child(7) {
+    width: 80%;
+    height: 80%;
+    background-size: cover;
+    background-position: center;
+    z-index: 2;
+  }
+
+  .circle:nth-child(7) div {
+    opacity: .3;
+  }
+
+  .circle:nth-child(8) {
+    width: 80%;
+    height: 80%;
+    background-size: cover;
+    background-position: center;
+    z-index: 2;
+  }
+
+  .circle:nth-child(8) div {
+    opacity: .3;
   }
 
   .circle:nth-child(1).tempLast {
