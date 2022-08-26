@@ -651,3 +651,62 @@ ul.slick-dots li button {
   width: 100%;
   height: 200px;
 }
+
+@media only screen and (max-width: 500px) {
+  .home_left_content {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-top: calc(122px + 7.5vh);
+    padding-left: 55px;
+    padding-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    box-sizing: border-box;
+  }
+
+  .subtagline {
+    font-family: 'Basis Grotesque';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 48px;
+    line-height: 100%;
+    color: #FFFFFF;
+  }
+
+  .slick-initialized .slick-slide {
+    display: flex !important;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+  }
+
+  .main_tagline {
+    font-family: 'Basis Grotesque Pro';
+    font-style: normal;
+    font-weight: 350;
+    font-size: 16px;
+    line-height: 110%;
+    display: flex;
+    align-items: flex-end;
+    text-align: center;
+    color: #FFFFFF;
+    width: 100%;
+  }
+
+  .circles {
+    width: 200vw;
+    height: 200vw;
+    position: absolute;
+    left: -50vw;
+    z-index: -1;
+    bottom: 0;
+    margin: auto;
+    top: unset;
+    bottom: -60vw;
+  }
+}
