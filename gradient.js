@@ -18,12 +18,13 @@ $(window).on('load', function() {
     console.log(lastID)
     var newID = $('.circles .circle:last').attr('id')
     console.log(newID)
+    var colorID = $('.circles .circle:nth-child(7)').attr('id')
     $('.circles').prepend($('.circles .circle:last').addClass('tempLast'))
     setTimeout(function() {
       $('.circles .circle.tempLast').removeClass('tempLast')
     }, 1)
     $('body').removeClass(lastID)
-    $('body').addClass(newID)
+    $('body').addClass(colorID)
   });
 
   $('.taglines_slider').addClass('show')
