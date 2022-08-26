@@ -27,7 +27,9 @@ $(window).on('load', function() {
     // console.log(nextSlide);
     console.log('NEXT')
     var lastID = $('.circles .circle:first').attr('id')
+    console.log(lastID)
     var newID = $('.circles .circle:last').attr('id')
+    onsole.log(newID)
     $('.circles').prepend($('.circles .circle:last').addClass('tempLast'))
     setTimeout(function() {
       $('.circles .circle.tempLast').removeClass('tempLast')
