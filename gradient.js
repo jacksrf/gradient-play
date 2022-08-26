@@ -41,4 +41,6 @@ $(window).on('load', function() {
   });
 
   $('.taglines_slider').addClass('show')
+  $('.main_tagline').addClass('show')
+  
 })
