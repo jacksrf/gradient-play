@@ -547,8 +547,8 @@
   .taglines_slider {
       width: 100%;
       opacity: 0;
-      transition: all 300ms;
-      -webkit-transition: all 300ms;
+      transition: all 1000ms;
+      -webkit-transition: all 1000ms;
       transform: translateX(-50px)
   }
 
@@ -596,7 +596,17 @@
       align-items: flex-end;
       color: #FFFFFF;
       width: 550px;
-  }
+      opacity: 0;
+  transition: all 1000ms;
+  -webkit-transition: all 1000ms;
+  transform: translateX(-50px)
+}
+
+.taglines_slider.show {
+opacity: 1;
+transform: translateX(0px)
+transition-delay: 500ms;
+}
 
   ul.slick-dots {
       display: flex!important;
