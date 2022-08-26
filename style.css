@@ -673,6 +673,7 @@ ul.slick-dots li button {
       left: 0;
       padding-top: calc(122px + 7.5vh);
       padding-left: 32px;
+      padding-right: 32px;
       padding-bottom: 40px;
       display: flex;
       flex-direction: column;
