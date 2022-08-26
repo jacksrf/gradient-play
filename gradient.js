@@ -23,9 +23,9 @@ $(window).on('load', function() {
   //   $('body').addClass(newID)
   // })
 
-  $('.taglines_slider').on('init', function(event, slick, direction){
-    $('.taglines_slider').addClass('show')
-  });
+  // $('.taglines_slider').on('init', function(event, slick, direction){
+  //   $('.taglines_slider').addClass('show')
+  // });
 
   $('.taglines_slider').on('beforeChange', function(event, slick, currentSlide, nextSlide){
     console.log(nextSlide);
@@ -39,4 +39,6 @@ $(window).on('load', function() {
     $('body').removeClass(lastID)
     $('body').addClass(newID)
   });
+
+  $('.taglines_slider').addClass('show')
 })
