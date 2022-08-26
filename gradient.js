@@ -3,7 +3,7 @@ $(window).on('load', function() {
   var slider = $('.taglines_slider').slick({
     dots: true,
     infinite: true,
-    speed: 500,
+    speed: 1000,
     fade: true,
     cssEase: 'linear',
     arrows: false,
