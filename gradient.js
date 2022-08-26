@@ -13,7 +13,9 @@ $(window).on('load', function() {
 
   $('.taglines_slider').on('beforeChange', function(event, slick, currentSlide, nextSlide){
     var lastID = $('.circles .circle:first').attr('id')
+    console.log(lastID)
     var colorID = $('.circles .circle:nth-child(7)').attr('id')
+    console.log(colorID)
     var newID = $('.circles .circle:last').attr('id')
     $('.circles').prepend($('.circles .circle:last').addClass('tempLast'))
     setTimeout(function() {
