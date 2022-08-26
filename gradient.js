@@ -24,7 +24,7 @@ $(window).on('load', function() {
     $('body').removeClass(newID)
     $('body').addClass(colorID)
   });
-
+  $('.circles').addClass('show')
   $('.taglines_slider').addClass('show')
   $('.main_tagline').addClass('show')
 
