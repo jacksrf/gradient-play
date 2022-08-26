@@ -13,13 +13,14 @@ $(window).on('load', function() {
 
   $('.taglines_slider').on('beforeChange', function(event, slick, currentSlide, nextSlide){
     var lastID = $('.circles .circle:first').attr('id')
+    var colorID = $('.circles .circle:nth-child(8)').attr('id')
     var newID = $('.circles .circle:last').attr('id')
     $('.circles').prepend($('.circles .circle:last').addClass('tempLast'))
     setTimeout(function() {
       $('.circles .circle.tempLast').removeClass('tempLast')
     }, 1)
     $('body').removeClass(lastID)
-    $('body').addClass(newID)
+    $('body').addClass(colorID)
   });
 
   $('.taglines_slider').addClass('show')
