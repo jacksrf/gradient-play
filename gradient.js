@@ -1,12 +1,14 @@
 
 $(window).on('load', function() {
-  $('.taglines_slider').slick({
+  var slider = $('.taglines_slider').slick({
     dots: true,
     infinite: true,
     speed: 500,
     fade: true,
     cssEase: 'linear',
-    arrows: false
+    arrows: false,
+    autoplay: true,
+    autoplaySpeed: 4000
   });
 
   $('.change_circles').click(function() {
