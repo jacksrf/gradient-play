@@ -19,6 +19,7 @@ $(window).on('load', function() {
     var newID = $('.circles .circle:last').attr('id')
     console.log(newID)
     var colorID = $('.circles .circle:nth-child(7)').attr('id')
+    console.log(colorID)
     $('.circles').prepend($('.circles .circle:last').addClass('tempLast'))
     setTimeout(function() {
       $('.circles .circle.tempLast').removeClass('tempLast')
