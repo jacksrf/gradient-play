@@ -28,6 +28,7 @@ $(window).on('load', function() {
     $('body').addClass(colorID)
     setTimeout(function(){
       $('.circles .circle:last').css('opacity','0')
+      $('.circles .circle:first').css('opacity','.01')
     }, 1000)
   });
 
