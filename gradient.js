@@ -15,7 +15,9 @@ $(window).on('load', function() {
 
   $('.taglines_slider').on('beforeChange', function(event, slick, currentSlide, nextSlide){
     var lastID = $('.circles .circle:first').attr('id')
+    console.log(lastID)
     var newID = $('.circles .circle:last').attr('id')
+    console.log(newID)
     $('.circles').prepend($('.circles .circle:last').addClass('tempLast'))
     setTimeout(function() {
       $('.circles .circle.tempLast').removeClass('tempLast')
