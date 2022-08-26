@@ -1,5 +1,5 @@
 @font-face {
-  font-family: 'Basis Grotesque';
+  font-family: 'Basis-Grotesque';
   src: url('./fonts/BasisGrotesque-Light.eot');
   src: url('./fonts/BasisGrotesque-Light.eot?#iefix') format('embedded-opentype'),
     url('./fonts/BasisGrotesque-Light.woff2') format('woff2'),
@@ -12,7 +12,7 @@
 }
 
 @font-face {
-  font-family: 'Basis Grotesque';
+  font-family: 'Basis-Grotesque';
   src: url('./fonts/BasisGrotesque-MediumItalic.eot');
   src: url('./fonts/BasisGrotesque-MediumItalic.eot?#iefix') format('embedded-opentype'),
     url('./fonts/BasisGrotesque-MediumItalic.woff2') format('woff2'),
@@ -25,7 +25,7 @@
 }
 
 @font-face {
-  font-family: 'Basis Grotesque';
+  font-family: 'Basis-Grotesque';
   src: url('./fonts/BasisGrotesque-Black.eot');
   src: url('./fonts/BasisGrotesque-Black.eot?#iefix') format('embedded-opentype'),
     url('./fonts/BasisGrotesque-Black.woff2') format('woff2'),
@@ -38,7 +38,7 @@
 }
 
 @font-face {
-  font-family: 'Basis Grotesque Mono';
+  font-family: 'Basis-Grotesque-Mono';
   src: url('./fonts/BasisGrotesqueMono-LightItalic.eot');
   src: url('./fonts/BasisGrotesqueMono-LightItalic.eot?#iefix') format('embedded-opentype'),
     url('./fonts/BasisGrotesqueMono-LightItalic.woff2') format('woff2'),
@@ -51,7 +51,7 @@
 }
 
 @font-face {
-  font-family: 'Basis Grotesque';
+  font-family: 'Basis-Grotesque';
   src: url('./fonts/BasisGrotesque-LightItalic.eot');
   src: url('./fonts/BasisGrotesque-LightItalic.eot?#iefix') format('embedded-opentype'),
     url('./fonts/BasisGrotesque-LightItalic.woff2') format('woff2'),
@@ -64,7 +64,7 @@
 }
 
 @font-face {
-  font-family: 'Basis Grotesque Mono';
+  font-family: 'Basis-Grotesque-Mono';
   src: url('./fonts/BasisGrotesqueMono-Bold.eot');
   src: url('./fonts/BasisGrotesqueMono-Bold.eot?#iefix') format('embedded-opentype'),
     url('./fonts/BasisGrotesqueMono-Bold.woff2') format('woff2'),
@@ -77,7 +77,7 @@
 }
 
 @font-face {
-  font-family: 'Basis Grotesque';
+  font-family: 'Basis-Grotesque';
   src: url('./fonts/BasisGrotesque-BlackItalic.eot');
   src: url('./fonts/BasisGrotesque-BlackItalic.eot?#iefix') format('embedded-opentype'),
     url('./fonts/BasisGrotesque-BlackItalic.woff2') format('woff2'),
@@ -90,7 +90,7 @@
 }
 
 @font-face {
-  font-family: 'Basis Grotesque Mono';
+  font-family: 'Basis-Grotesque-Mono';
   src: url('./fonts/BasisGrotesqueMono-Italic.eot');
   src: url('./fonts/BasisGrotesqueMono-Italic.eot?#iefix') format('embedded-opentype'),
     url('./fonts/BasisGrotesqueMono-Italic.woff2') format('woff2'),
@@ -103,7 +103,7 @@
 }
 
 @font-face {
-  font-family: 'Basis Grotesque';
+  font-family: 'Basis-Grotesque';
   src: url('./fonts/BasisGrotesque-BoldItalic.eot');
   src: url('./fonts/BasisGrotesque-BoldItalic.eot?#iefix') format('embedded-opentype'),
     url('./fonts/BasisGrotesque-BoldItalic.woff2') format('woff2'),
@@ -116,7 +116,7 @@
 }
 
 @font-face {
-  font-family: 'Basis Grotesque';
+  font-family: 'Basis-Grotesque';
   src: url('./fonts/BasisGrotesque-Medium.eot');
   src: url('./fonts/BasisGrotesque-Medium.eot?#iefix') format('embedded-opentype'),
     url('./fonts/BasisGrotesque-Medium.woff2') format('woff2'),
@@ -129,7 +129,7 @@
 }
 
 @font-face {
-  font-family: 'Basis Grotesque Mono';
+  font-family: 'Basis-Grotesque-Mono';
   src: url('./fonts/BasisGrotesqueMono-BoldItalic.eot');
   src: url('./fonts/BasisGrotesqueMono-BoldItalic.eot?#iefix') format('embedded-opentype'),
     url('./fonts/BasisGrotesqueMono-BoldItalic.woff2') format('woff2'),
@@ -142,7 +142,7 @@
 }
 
 @font-face {
-  font-family: 'Basis Grotesque';
+  font-family: 'Basis-Grotesque';
   src: url('./fonts/BasisGrotesque-Italic.eot');
   src: url('./fonts/BasisGrotesque-Italic.eot?#iefix') format('embedded-opentype'),
     url('./fonts/BasisGrotesque-Italic.woff2') format('woff2'),
@@ -155,7 +155,7 @@
 }
 
 @font-face {
-  font-family: 'Basis Grotesque Mono';
+  font-family: 'Basis-Grotesque-Mono';
   src: url('./fonts/BasisGrotesqueMono-Medium.eot');
   src: url('./fonts/BasisGrotesqueMono-Medium.eot?#iefix') format('embedded-opentype'),
     url('./fonts/BasisGrotesqueMono-Medium.woff2') format('woff2'),
@@ -168,7 +168,7 @@
 }
 
 @font-face {
-  font-family: 'Basis Grotesque Mono';
+  font-family: 'Basis-Grotesque-Mono';
   src: url('./fonts/BasisGrotesqueMono-Light.eot');
   src: url('./fonts/BasisGrotesqueMono-Light.eot?#iefix') format('embedded-opentype'),
     url('./fonts/BasisGrotesqueMono-Light.woff2') format('woff2'),
@@ -181,7 +181,7 @@
 }
 
 @font-face {
-  font-family: 'Basis Grotesque';
+  font-family: 'Basis-Grotesque';
   src: url('./fonts/BasisGrotesque-Regular.eot');
   src: url('./fonts/BasisGrotesque-Regular.eot?#iefix') format('embedded-opentype'),
     url('./fonts/BasisGrotesque-Regular.woff2') format('woff2'),
@@ -220,7 +220,7 @@
 }
 
 @font-face {
-  font-family: 'Basis Grotesque Mono';
+  font-family: 'Basis-Grotesque-Mono';
   src: url('./fonts/BasisGrotesqueMono-MediumItalic.eot');
   src: url('./fonts/BasisGrotesqueMono-MediumItalic.eot?#iefix') format('embedded-opentype'),
     url('./fonts/BasisGrotesqueMono-MediumItalic.woff2') format('woff2'),
@@ -233,7 +233,7 @@
 }
 
 @font-face {
-  font-family: 'Basis Grotesque Mono';
+  font-family: 'Basis-Grotesque-Mono';
   src: url('./fonts/BasisGrotesqueMono-Regular.eot');
   src: url('./fonts/BasisGrotesqueMono-Regular.eot?#iefix') format('embedded-opentype'),
     url('./fonts/BasisGrotesqueMono-Regular.woff2') format('woff2'),
@@ -597,7 +597,7 @@ body.circle8 li.slick-active {
 }
 
 .main_tagline {
-  font-family: 'Basis Grotesque';
+  font-family: 'Basis-Grotesque';
   font-style: normal;
   font-weight: 350;
   font-size: 24px;
@@ -651,7 +651,7 @@ ul.slick-dots li button {
 }
 
 .subtagline {
-  font-family: 'Basis Grotesque';
+  font-family: 'Basis-Grotesque';
   font-style: normal;
   font-weight: 300;
   font-size: 64px;
@@ -682,7 +682,7 @@ ul.slick-dots li button {
   }
 
   .subtagline {
-    font-family: 'Basis Grotesque';
+    font-family: 'Basis-Grotesque';
     font-style: normal;
     font-weight: 300;
     font-size: 48px;
