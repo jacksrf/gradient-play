@@ -15,21 +15,14 @@ $(window).on('load', function() {
 
   $('.taglines_slider').on('beforeChange', function(event, slick, currentSlide, nextSlide){
     var lastID = $('.circles .circle:first').attr('id')
-    console.log(lastID)
     var newID = $('.circles .circle:last').attr('id')
-    console.log(newID)
     var colorID = $('.circles .circle:nth-child(7)').attr('id')
-    console.log(colorID)
     $('.circles').prepend($('.circles .circle:last').addClass('tempLast'))
     setTimeout(function() {
       $('.circles .circle.tempLast').removeClass('tempLast')
     }, 1)
     $('body').removeClass(newID)
     $('body').addClass(colorID)
-    setTimeout(function(){
-      // $('.circles .circle:last').css('opacity','0')
-      // $('.circles .circle:first').css('opacity','.01')
-    }, 1000)
   });
 
   $('.taglines_slider').addClass('show')

@@ -657,6 +657,66 @@ ul.slick-dots li button {
     height: 200px;
 }
 
+
+@media all and (max-width: 500px) {
+  .home_left_content {
+    width: 650px;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-top: calc(122px + 7.5vh);
+    padding-left: 32px;
+    padding-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.subtagline {
+    font-family: 'Basis Grotesque';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 48px;
+    line-height: 100%;
+    color: #FFFFFF;
+}
+
+.slick-initialized .slick-slide {
+    display: flex!important;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+}
+
+.main_tagline {
+    font-family: 'Basis Grotesque Pro';
+    font-style: normal;
+    font-weight: 350;
+    font-size: 16px;
+    line-height: 110%;
+    display: flex;
+    align-items: flex-end;
+    text-align: center;
+    color: #FFFFFF;
+    width: 100%;
+}
+
+.circles {
+    width: 200vw;
+    height: 200vw;
+    position: absolute;
+    left: -50vw;
+    z-index: -1;
+    bottom: 0;
+    margin: auto;
+    top: unset;
+    bottom: -60vw;
+}
+}
+
 </style>
 <html class="no-js" lang="en-AU">
 <!--<![endif]-->
@@ -681,30 +741,6 @@ ul.slick-dots li button {
       </div>
 
       <div class="circles">
-        <!-- <div class="circle" id="circle8">
-          <div class="inner_circle" style="background-image: url('./gifs/square1.gif');"></div>
-        </div>
-        <div class="circle" id="circle1">
-          <div class="inner_circle" style="background-image: url('./gifs/square4.gif');"></div>
-        </div>
-        <div class="circle" id="circle2">
-          <div class="inner_circle" style="background-image: url('./gifs/square3.gif');"></div>
-        </div>
-        <div class="circle" id="circle3">
-          <div class="inner_circle" style="background-image: url('./gifs/square2.gif');"></div>
-        </div>
-        <div class="circle" id="circle4">
-          <div class="inner_circle" style="background-image: url('./gifs/square1.gif');"></div>
-        </div>
-        <div class="circle" id="circle5">
-          <div class="inner_circle" style="background-image: url('./gifs/square4.gif');"></div>
-        </div>
-        <div class="circle" id="circle6">
-          <div class="inner_circle" style="background-image: url('./gifs/square3.gif');"></div>
-        </div>
-        <div class="circle" id="circle7">
-          <div class="inner_circle" style="background-image: url('./gifs/square2.gif');"></div>
-        </div> -->
         <div class="circle" id="circle1">
           <video class="inner_circle" autoplay muted loop>
             <source src="./movs/4b_crop_V1.mp4" type="video/mp4">
@@ -755,23 +791,9 @@ ul.slick-dots li button {
           <div class="subtagline">Creating</br>understanding in</br>a complex world</div>
         </div>
 
-
         <div class="main_tagline">The world’s first comprehensive data-driven solution for stakeholder management</div>
       </div>
-
-      <!-- <div class="change_circles">NEXT</div> -->
     </div>
-
-    <!-- <svg id="grain_background" viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'>
-      <filter id='noiseFilter'>
-        <feTurbulence
-          type='fractalNoise'
-          baseFrequency='1.75'
-          numOctaves='3'
-          stitchTiles='stitch'/>
-      </filter>
-      <rect width='100vw' height='100vh' filter='url(#noiseFilter)'/>
-    </svg> -->
   </div>
   <div class="other">
   </div>
