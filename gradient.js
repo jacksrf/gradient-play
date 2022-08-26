@@ -5,7 +5,8 @@ $(window).on('load', function() {
     infinite: true,
     speed: 500,
     fade: true,
-    cssEase: 'linear'
+    cssEase: 'linear',
+    arrows: false
   });
 
   $('.change_circles').click(function() {
