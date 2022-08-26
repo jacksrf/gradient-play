@@ -23,26 +23,11 @@ $(window).on('load', function() {
   //   $('body').addClass(newID)
   // })
 
-  $('.taglines_slider').on('init', function(event, slick, direction){
-    // console.log(nextSlide);
-    console.log('NEXT')
+  $('.taglines_slider').on('beforeChange', function(event, slick, currentSlide, nextSlide){
     var lastID = $('.circles .circle:first').attr('id')
     console.log(lastID)
     var newID = $('.circles .circle:last').attr('id')
-    onsole.log(newID)
-    $('.circles').prepend($('.circles .circle:last').addClass('tempLast'))
-    setTimeout(function() {
-      $('.circles .circle.tempLast').removeClass('tempLast')
-    }, 1)
-    $('body').removeClass(lastID)
-    $('body').addClass(newID)
-  });
-
-  $('.taglines_slider').on('beforeChange', function(event, slick, currentSlide, nextSlide){
-    console.log(nextSlide);
-    console.log('NEXT')
-    var lastID = $('.circles .circle:first').attr('id')
-    var newID = $('.circles .circle:last').attr('id')
+    console.log(newID)
     $('.circles').prepend($('.circles .circle:last').addClass('tempLast'))
     setTimeout(function() {
       $('.circles .circle.tempLast').removeClass('tempLast')
