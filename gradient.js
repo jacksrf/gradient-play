@@ -11,18 +11,17 @@ $(window).on('load', function() {
     autoplaySpeed: 4000
   });
 
+
+
   $('.taglines_slider').on('beforeChange', function(event, slick, currentSlide, nextSlide){
-    var colorID = $('.circles .circle:nth-child(8)').attr('id')
-    console.log(colorID)
-    var lastID = $('.circles .circle:last').attr('id')
-    console.log(lastID)
-    $('.circles').prepend($('.circles .circle:nth-child(8)'))
-    $('.circles .circle:last').addClass('tempLast')
+    var lastID = $('.circles .circle:first').attr('id')
+    var newID = $('.circles .circle:last').attr('id')
+    $('.circles').prepend($('.circles .circle:last').addClass('tempLast'))
     setTimeout(function() {
       $('.circles .circle.tempLast').removeClass('tempLast')
     }, 1)
     $('body').removeClass(lastID)
-    $('body').addClass(colorID)
+    $('body').addClass(newID)
   });
 
   $('.taglines_slider').addClass('show')
