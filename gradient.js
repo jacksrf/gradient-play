@@ -24,7 +24,7 @@ $(window).on('load', function() {
     setTimeout(function() {
       $('.circles .circle.tempLast').removeClass('tempLast')
     }, 1)
-    $('body').removeClass(lastID)
+    $('body').removeClass(newID)
     $('body').addClass(colorID)
   });
 
