@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en-AU">
+
+<head>
+  <link rel="stylesheet"  href="./style.css">
+  </link>
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <style>
+    @font-face {
+      font-family: 'Basis Grotesque';
+      src: url('./fonts/BasisGrotesque-Light.eot');
+      src: url('./fonts/BasisGrotesque-Light.eot?#iefix') format('embedded-opentype'),
+        url('./fonts/BasisGrotesque-Light.woff2') format('woff2'),
+        url('./fonts/BasisGrotesque-Light.woff') format('woff'),
+        url('./fonts/BasisGrotesque-Light.ttf') format('truetype'),
+        url('./fonts/BasisGrotesque-Light.svg#BasisGrotesque-Light') format('svg');
+      font-weight: 300;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    @font-face {
+      font-family: 'Basis Grotesque';
+      src: url('./fonts/BasisGrotesque-MediumItalic.eot');
+      src: url('./fonts/BasisGrotesque-MediumItalic.eot?#iefix') format('embedded-opentype'),
+        url('./fonts/BasisGrotesque-MediumItalic.woff2') format('woff2'),
+        url('./fonts/BasisGrotesque-MediumItalic.woff') format('woff'),
+        url('./fonts/BasisGrotesque-MediumItalic.ttf') format('truetype'),
+        url('./fonts/BasisGrotesque-MediumItalic.svg#BasisGrotesque-MediumItalic') format('svg');
+      font-weight: 500;
+      font-style: italic;
+      font-display: swap;
+    }
+
+    @font-face {
+      font-family: 'Basis Grotesque';
+      src: url('./fonts/BasisGrotesque-Black.eot');
+      src: url('./fonts/BasisGrotesque-Black.eot?#iefix') format('embedded-opentype'),
+        url('./fonts/BasisGrotesque-Black.woff2') format('woff2'),
+        url('./fonts/BasisGrotesque-Black.woff') format('woff'),
+        url('./fonts/BasisGrotesque-Black.ttf') format('truetype'),
+        url('./fonts/BasisGrotesque-Black.svg#BasisGrotesque-Black') format('svg');
+      font-weight: 900;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    @font-face {
+      font-family: 'Basis Grotesque Mono';
+      src: url('./fonts/BasisGrotesqueMono-LightItalic.eot');
+      src: url('./fonts/BasisGrotesqueMono-LightItalic.eot?#iefix') format('embedded-opentype'),
+        url('./fonts/BasisGrotesqueMono-LightItalic.woff2') format('woff2'),
+        url('./fonts/BasisGrotesqueMono-LightItalic.woff') format('woff'),
+        url('./fonts/BasisGrotesqueMono-LightItalic.ttf') format('truetype'),
+        url('./fonts/BasisGrotesqueMono-LightItalic.svg#BasisGrotesqueMono-LightItalic') format('svg');
+      font-weight: 300;
+      font-style: italic;
+      font-display: swap;
+    }
+
+    @font-face {
+      font-family: 'Basis Grotesque';
+      src: url('./fonts/BasisGrotesque-LightItalic.eot');
+      src: url('./fonts/BasisGrotesque-LightItalic.eot?#iefix') format('embedded-opentype'),
+        url('./fonts/BasisGrotesque-LightItalic.woff2') format('woff2'),
+        url('./fonts/BasisGrotesque-LightItalic.woff') format('woff'),
+        url('./fonts/BasisGrotesque-LightItalic.ttf') format('truetype'),
+        url('./fonts/BasisGrotesque-LightItalic.svg#BasisGrotesque-LightItalic') format('svg');
+      font-weight: 300;
+      font-style: italic;
+      font-display: swap;
+    }
+
+    @font-face {
+      font-family: 'Basis Grotesque Mono';
+      src: url('./fonts/BasisGrotesqueMono-Bold.eot');
+      src: url('./fonts/BasisGrotesqueMono-Bold.eot?#iefix') format('embedded-opentype'),
+        url('./fonts/BasisGrotesqueMono-Bold.woff2') format('woff2'),
+        url('./fonts/BasisGrotesqueMono-Bold.woff') format('woff'),
+        url('./fonts/BasisGrotesqueMono-Bold.ttf') format('truetype'),
+        url('./fonts/BasisGrotesqueMono-Bold.svg#BasisGrotesqueMono-Bold') format('svg');
+      font-weight: bold;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    @font-face {
+      font-family: 'Basis Grotesque';
+      src: url('./fonts/BasisGrotesque-BlackItalic.eot');
+      src: url('./fonts/BasisGrotesque-BlackItalic.eot?#iefix') format('embedded-opentype'),
+        url('./fonts/BasisGrotesque-BlackItalic.woff2') format('woff2'),
+        url('./fonts/BasisGrotesque-BlackItalic.woff') format('woff'),
+        url('./fonts/BasisGrotesque-BlackItalic.ttf') format('truetype'),
+        url('./fonts/BasisGrotesque-BlackItalic.svg#BasisGrotesque-BlackItalic') format('svg');
+      font-weight: 900;
+      font-style: italic;
+      font-display: swap;
+    }
+
+    @font-face {
+      font-family: 'Basis Grotesque Mono';
+      src: url('./fonts/BasisGrotesqueMono-Italic.eot');
+      src: url('./fonts/BasisGrotesqueMono-Italic.eot?#iefix') format('embedded-opentype'),
+        url('./fonts/BasisGrotesqueMono-Italic.woff2') format('woff2'),
+        url('./fonts/BasisGrotesqueMono-Italic.woff') format('woff'),
+        url('./fonts/BasisGrotesqueMono-Italic.ttf') format('truetype'),
+        url('./fonts/BasisGrotesqueMono-Italic.svg#BasisGrotesqueMono-Italic') format('svg');
+      font-weight: normal;
+      font-style: italic;
+      font-display: swap;
+    }
+
+    @font-face {
+      font-family: 'Basis Grotesque';
+      src: url('./fonts/BasisGrotesque-BoldItalic.eot');
+      src: url('./fonts/BasisGrotesque-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('./fonts/BasisGrotesque-BoldItalic.woff2') format('woff2'),
+        url('./fonts/BasisGrotesque-BoldItalic.woff') format('woff'),
+        url('./fonts/BasisGrotesque-BoldItalic.ttf') format('truetype'),
+        url('./fonts/BasisGrotesque-BoldItalic.svg#BasisGrotesque-BoldItalic') format('svg');
+      font-weight: bold;
+      font-style: italic;
+      font-display: swap;
+    }
+
+    @font-face {
+      font-family: 'Basis Grotesque';
+      src: url('./fonts/BasisGrotesque-Medium.eot');
+      src: url('./fonts/BasisGrotesque-Medium.eot?#iefix') format('embedded-opentype'),
+        url('./fonts/BasisGrotesque-Medium.woff2') format('woff2'),
+        url('./fonts/BasisGrotesque-Medium.woff') format('woff'),
+        url('./fonts/BasisGrotesque-Medium.ttf') format('truetype'),
+        url('./fonts/BasisGrotesque-Medium.svg#BasisGrotesque-Medium') format('svg');
+      font-weight: 500;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    @font-face {
+      font-family: 'Basis Grotesque Mono';
+      src: url('./fonts/BasisGrotesqueMono-BoldItalic.eot');
+      src: url('./fonts/BasisGrotesqueMono-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('./fonts/BasisGrotesqueMono-BoldItalic.woff2') format('woff2'),
+        url('./fonts/BasisGrotesqueMono-BoldItalic.woff') format('woff'),
+        url('./fonts/BasisGrotesqueMono-BoldItalic.ttf') format('truetype'),
+        url('./fonts/BasisGrotesqueMono-BoldItalic.svg#BasisGrotesqueMono-BoldItalic') format('svg');
+      font-weight: bold;
+      font-style: italic;
+      font-display: swap;
+    }
+
+    @font-face {
+      font-family: 'Basis Grotesque';
+      src: url('./fonts/BasisGrotesque-Italic.eot');
+      src: url('./fonts/BasisGrotesque-Italic.eot?#iefix') format('embedded-opentype'),
+        url('./fonts/BasisGrotesque-Italic.woff2') format('woff2'),
+        url('./fonts/BasisGrotesque-Italic.woff') format('woff'),
+        url('./fonts/BasisGrotesque-Italic.ttf') format('truetype'),
+        url('./fonts/BasisGrotesque-Italic.svg#BasisGrotesque-Italic') format('svg');
+      font-weight: normal;
+      font-style: italic;
+      font-display: swap;
+    }
+
+    @font-face {
+      font-family: 'Basis Grotesque Mono';
+      src: url('./fonts/BasisGrotesqueMono-Medium.eot');
+      src: url('./fonts/BasisGrotesqueMono-Medium.eot?#iefix') format('embedded-opentype'),
+        url('./fonts/BasisGrotesqueMono-Medium.woff2') format('woff2'),
+        url('./fonts/BasisGrotesqueMono-Medium.woff') format('woff'),
+        url('./fonts/BasisGrotesqueMono-Medium.ttf') format('truetype'),
+        url('./fonts/BasisGrotesqueMono-Medium.svg#BasisGrotesqueMono-Medium') format('svg');
+      font-weight: 500;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    @font-face {
+      font-family: 'Basis Grotesque Mono';
+      src: url('./fonts/BasisGrotesqueMono-Light.eot');
+      src: url('./fonts/BasisGrotesqueMono-Light.eot?#iefix') format('embedded-opentype'),
+        url('./fonts/BasisGrotesqueMono-Light.woff2') format('woff2'),
+        url('./fonts/BasisGrotesqueMono-Light.woff') format('woff'),
+        url('./fonts/BasisGrotesqueMono-Light.ttf') format('truetype'),
+        url('./fonts/BasisGrotesqueMono-Light.svg#BasisGrotesqueMono-Light') format('svg');
+      font-weight: 300;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    @font-face {
+      font-family: 'Basis Grotesque';
+      src: url('./fonts/BasisGrotesque-Regular.eot');
+      src: url('./fonts/BasisGrotesque-Regular.eot?#iefix') format('embedded-opentype'),
+        url('./fonts/BasisGrotesque-Regular.woff2') format('woff2'),
+        url('./fonts/BasisGrotesque-Regular.woff') format('woff'),
+        url('./fonts/BasisGrotesque-Regular.ttf') format('truetype'),
+        url('./fonts/BasisGrotesque-Regular.svg#BasisGrotesque-Regular') format('svg');
+      font-weight: normal;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    @font-face {
+      font-family: 'Basis Grotesque Off-White';
+      src: url('./fonts/BasisGrotesque-Off-WhiteItalic.eot');
+      src: url('./fonts/BasisGrotesque-Off-WhiteItalic.eot?#iefix') format('embedded-opentype'),
+        url('./fonts/BasisGrotesque-Off-WhiteItalic.woff2') format('woff2'),
+        url('./fonts/BasisGrotesque-Off-WhiteItalic.woff') format('woff'),
+        url('./fonts/BasisGrotesque-Off-WhiteItalic.ttf') format('truetype'),
+        url('./fonts/BasisGrotesque-Off-WhiteItalic.svg#BasisGrotesque-Off-WhiteItalic') format('svg');
+      font-weight: normal;
+      font-style: italic;
+      font-display: swap;
+    }
+
+    @font-face {
+      font-family: 'Basis Grotesque Off-White';
+      src: url('./fonts/BasisGrotesque-Off-White.eot');
+      src: url('./fonts/BasisGrotesque-Off-White.eot?#iefix') format('embedded-opentype'),
+        url('./fonts/BasisGrotesque-Off-White.woff2') format('woff2'),
+        url('./fonts/BasisGrotesque-Off-White.woff') format('woff'),
+        url('./fonts/BasisGrotesque-Off-White.ttf') format('truetype'),
+        url('./fonts/BasisGrotesque-Off-White.svg#BasisGrotesque-Off-White') format('svg');
+      font-weight: normal;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    @font-face {
+      font-family: 'Basis Grotesque Mono';
+      src: url('./fonts/BasisGrotesqueMono-MediumItalic.eot');
+      src: url('./fonts/BasisGrotesqueMono-MediumItalic.eot?#iefix') format('embedded-opentype'),
+        url('./fonts/BasisGrotesqueMono-MediumItalic.woff2') format('woff2'),
+        url('./fonts/BasisGrotesqueMono-MediumItalic.woff') format('woff'),
+        url('./fonts/BasisGrotesqueMono-MediumItalic.ttf') format('truetype'),
+        url('./fonts/BasisGrotesqueMono-MediumItalic.svg#BasisGrotesqueMono-MediumItalic') format('svg');
+      font-weight: 500;
+      font-style: italic;
+      font-display: swap;
+    }
+
+    @font-face {
+      font-family: 'Basis Grotesque Mono';
+      src: url('./fonts/BasisGrotesqueMono-Regular.eot');
+      src: url('./fonts/BasisGrotesqueMono-Regular.eot?#iefix') format('embedded-opentype'),
+        url('./fonts/BasisGrotesqueMono-Regular.woff2') format('woff2'),
+        url('./fonts/BasisGrotesqueMono-Regular.woff') format('woff'),
+        url('./fonts/BasisGrotesqueMono-Regular.ttf') format('truetype'),
+        url('./fonts/BasisGrotesqueMono-Regular.svg#BasisGrotesqueMono-Regular') format('svg');
+      font-weight: normal;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    body {
+      margin: 0px;
+      transition: all 1200ms;
+      -webkit-transition: all 1200ms;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    #canvas,
+    canvas {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+      opacity: .2;
+    }
+
+    svg#grain_background {
+      position: absolute;
+      z-index: 2;
+      opacity: .125;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+    }
+
+    .penta_logo {
+      padding: 40px 60px;
+    }
+
+    .penta_logo svg path {
+      fill: white;
+      transition: all 1200ms;
+      -webkit-transition: all 1200ms;
+    }
+
+    .circle1 .penta_logo svg path {
+      fill: #FF9900;
+    }
+
+    .circle2 .penta_logo svg path {
+      fill: #3D95FF;
+    }
+
+    .circle3 .penta_logo svg path {
+      fill: #FF0039;
+    }
+
+    .circle4 .penta_logo svg path {
+      fill: #88FFC3;
+    }
+
+    .circle5 .penta_logo svg path {
+      fill: #FF9900;
+    }
+
+    .circle6 .penta_logo svg path {
+      fill: #3D95FF;
+    }
+
+    .circle7 .penta_logo svg path {
+      fill: #FF0039;
+    }
+
+    .circle8 .penta_logo svg path {
+      fill: #88FFC3;
+    }
+
+
+    body.circle1,
+    body.circle1 .circle {
+      background: #972C17;
+    }
+
+    body.circle2,
+    body.circle2 .circle {
+      background: rgb(0, 48, 91);
+    }
+
+    body.circle3,
+    body.circle3 .circle {
+      background: #480000;
+    }
+
+    body.circle4,
+    body.circle4 .circle {
+      background: #025E4E;
+    }
+
+    body.circle5,
+    body.circle5 .circle {
+      background: #972C17;
+    }
+
+    body.circle6,
+    body.circle6 .circle {
+      background: rgb(0, 48, 91);
+    }
+
+    body.circle7,
+    body.circle7 .circle {
+      background: #480000;
+    }
+
+    body.circle8,
+    body.circle8 .circle {
+      background: #025E4E;
+    }
+
+
+    body.circle1 li.slick-active {
+      background: #FF9900;
+    }
+
+    body.circle2 li.slick-active {
+      background: #3D95FF;
+    }
+
+    body.circle3 li.slick-active {
+      background: #FF0039;
+    }
+
+    body.circle4 li.slick-active {
+      background: #88FFC3;
+    }
+
+    body.circle5 li.slick-active {
+      background: #FF9900;
+    }
+
+    body.circle6 li.slick-active {
+      background: #3D95FF;
+    }
+
+    body.circle7 li.slick-active {
+      background: #FF0039;
+    }
+
+    body.circle8 li.slick-active {
+      background: #88FFC3;
+    }
+
+
+    .circles {
+      width: 150vw;
+      height: 150vw;
+      position: absolute;
+      top: 0px;
+      left: -5vw;
+      z-index: -1;
+      bottom: 0;
+      margin: auto;
+    }
+
+    .circle {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+      transition: all 1200ms;
+      -webkit-transition: all 1200ms;
+      border-radius: 50%;
+      overflow: hidden;
+    }
+
+    .inner_circle {
+      width: 100%;
+      height: 100%;
+      background-size: cover;
+      background-position: center;
+      background-blend-mode: screen, normal, normal;
+    }
+
+    .circle:nth-child(1) {
+      width: 87.5%;
+      height: 87.5%;
+      background-size: cover;
+      background-position: center;
+      z-index: 2;
+      opacity: .01;
+    }
+
+    .circle:nth-child(1) video {
+      opacity: 0;
+    }
+
+    .circle:nth-child(2) {
+      width: 75%;
+      height: 75%;
+      background-size: cover;
+      background-position: center;
+      z-index: 3;
+      opacity: .01;
+    }
+
+    .circle:nth-child(2) video {
+      opacity: .05;
+    }
+
+    .circle:nth-child(3) {
+      width: 62.5%;
+      height: 62.5%;
+      background-size: cover;
+      background-position: center;
+      z-index: 4;
+    }
+
+    .circle:nth-child(3) video {
+      opacity: .1;
+    }
+
+    .circle:nth-child(4) {
+      width: 50%;
+      height: 50%;
+      background-size: cover;
+      background-position: center;
+      z-index: 5;
+    }
+
+    .circle:nth-child(4) video {
+      opacity: .15;
+    }
+
+    .circle:nth-child(5) {
+      width: 37.5%;
+      height: 37.5%;
+      background-size: cover;
+      background-position: center;
+      z-index: 6;
+    }
+
+    .circle:nth-child(5) video {
+      opacity: .25;
+    }
+
+    .circle:nth-child(6) {
+      width: 25%;
+      height: 25%;
+      background-size: cover;
+      background-position: center;
+      z-index: 7;
+    }
+
+    .circle:nth-child(6) video {
+      opacity: .35;
+    }
+
+    .circle:nth-child(7) {
+      width: 12.5%;
+      height: 12.5%;
+      background-size: cover;
+      background-position: center;
+      z-index: 8;
+    }
+
+    .circle:nth-child(7) video {
+      opacity: .5;
+    }
+
+    .circle:nth-child(8) {
+      width: 0%;
+      height: 0%;
+      background-size: cover;
+      background-position: center;
+      z-index: 9;
+    }
+
+    .circle:nth-child(8) video {
+      opacity: .5;
+    }
+
+    /* .circle:nth-child(1).tempLast {
+      width: 80%;
+      height: 80%;
+      opacity: .01;
+  } */
+
+    .change_circles {
+      position: absolute;
+      bottom: 50px;
+      left: 50px;
+      color: white;
+      font-family: basis grotesque pro;
+      cursor: pointer;
+      z-index: 10000;
+      font-size: 30px;
+    }
+
+    .home_left_content {
+      width: 650px;
+      height: 100vh;
+      position: absolute;
+      top: 0;
+      left: 0;
+      padding-top: calc(122px + 7.5vh);
+      padding-left: 55px;
+      padding-bottom: 40px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: space-between;
+      box-sizing: border-box;
+    }
+
+    .taglines_slider {
+      width: 100%;
+      opacity: 0;
+      transition: all 1000ms;
+      -webkit-transition: all 1000ms;
+      transform: translateX(-50px)
+    }
+
+    .taglines_slider.show {
+      opacity: 1;
+      transform: translateX(0px)
+    }
+
+    .header_holder {
+      width: 100%;
+      height: 100vh;
+      float: left;
+      position: relative;
+    }
+
+    .header_slide {
+      position: relative;
+      top: 0;
+      left: 0;
+      z-index: 1000000;
+      height: 100%;
+      width: 100%;
+      overflow: hidden;
+    }
+
+    .header_slide img {
+      width: 100%;
+    }
+
+    .other {
+      width: 100%;
+      height: 100vh;
+      background: white;
+      position: relative;
+      z-index: 1000;
+    }
+
+    .main_tagline {
+      font-family: 'Basis Grotesque';
+      font-style: normal;
+      font-weight: 350;
+      font-size: 24px;
+      line-height: 110%;
+      display: flex;
+      align-items: flex-end;
+      color: #FFFFFF;
+      width: 550px;
+      opacity: 0;
+      transition: all 1000ms;
+      -webkit-transition: all 1000ms;
+      transform: translateX(-50px)
+    }
+
+    .main_tagline.show {
+      opacity: 1;
+      transform: translateX(0px);
+      transition-delay: 750ms;
+    }
+
+    ul.slick-dots {
+      display: flex !important;
+      padding: 0px;
+      list-style: none;
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-start;
+      margin-top: 50px;
+    }
+
+
+    ul.slick-dots li {
+      background: rgba(255, 255, 255, 0.3);
+      content: '';
+      width: 10px;
+      height: 10px;
+      display: block !important;
+      overflow: hidden;
+      margin-right: 12px;
+      border-radius: 50px;
+    }
+
+    ul.slick-dots li button {
+      content: none;
+      color: transparent;
+      border: 0px;
+      border-radius: 50px;
+      width: 100%;
+      height: 100%;
+      background: transparent;
+    }
+
+    .subtagline {
+      font-family: 'Basis Grotesque';
+      font-style: normal;
+      font-weight: 300;
+      font-size: 64px;
+      line-height: 100%;
+      color: #FFFFFF;
+    }
+
+    .slick-list.draggable {
+      width: 100%;
+      height: 200px;
+    }
+
+    @media only screen and (max-width: 500px) {
+      .home_left_content {
+        width: 100vw;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding-top: calc(122px + 7.5vh);
+        padding-left: 55px;
+        padding-bottom: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+        box-sizing: border-box;
+      }
+
+      .subtagline {
+        font-family: 'Basis Grotesque';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 48px;
+        line-height: 100%;
+        color: #FFFFFF;
+      }
+
+      .slick-initialized .slick-slide {
+        display: flex !important;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-end;
+      }
+
+      .main_tagline {
+        font-family: 'Basis Grotesque Pro';
+        font-style: normal;
+        font-weight: 350;
+        font-size: 16px;
+        line-height: 110%;
+        display: flex;
+        align-items: flex-end;
+        text-align: center;
+        color: #FFFFFF;
+        width: 100%;
+      }
+
+      .circles {
+        width: 200vw;
+        height: 200vw;
+        position: absolute;
+        left: -50vw;
+        z-index: -1;
+        bottom: 0;
+        margin: auto;
+        top: unset;
+        bottom: -60vw;
+      }
+    }
+  </style>
+</head>
+
+
+<body class="home page-template-default page page-id-10 animated-in animated-in-completed animated-in-reset circle8" style="">
+  <div class="header_slide">
+    <div class="header_holder">
+      <div class="penta_logo">
+        <svg width="148" height="42" viewBox="0 0 148 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M20.7819 0H0.134766V2.99371C4.07309 3.15357 5.43915 3.7821 5.43915 7.09189V33.8899C5.43915 37.1997 4.07309 37.8283 0.134766 37.9881V40.9818H21.0471V37.9881C16.2114 37.7774 13.8462 37.1997 13.8462 33.8899V3.52051H18.3659C24.7239 3.52051 27.8774 6.98653 27.8774 12.24C27.8774 18.3365 24.9891 21.1739 18.5766 21.1739H17.5448V24.5382H21.2542C31.9211 24.5382 36.7532 19.4409 36.7532 12.0875C36.7568 5.5696 32.2372 0 20.7819 0Z"
+            fill="#3D95FF" />
+          <path
+            d="M49.3914 15.6038C53.1772 15.6038 55.0119 18.4413 55.0664 22.3288H46.8991V25.2171H62.5252V23.4841C62.5252 17.0716 58.4271 12.0833 50.5468 12.0833C42.6665 12.0833 35.9379 18.3359 35.9379 27.7385C35.9379 35.9894 41.453 41.5045 49.8092 41.5045C57.3734 41.5045 61.1555 36.9849 62.5252 32.5706L60.636 31.626C58.8485 33.7804 56.2762 35.4626 52.545 35.4626C39.6764 35.4626 41.1842 15.6002 49.3914 15.6002V15.6038Z"
+            fill="#3D95FF" />
+          <path
+            d="M86.6273 21.7015C86.6273 18.5988 85.1559 17.4435 82.1622 17.4435C79.6916 17.4435 76.9595 18.4426 75.1211 19.5979V35.2567C75.1211 37.6728 76.4363 37.9344 78.8524 38.2504V40.9826H63.6695V38.2504C66.0855 37.9344 67.3462 37.6728 67.3462 35.2567V18.7586L63.9311 16.2917V14.715L73.439 11.9828H75.3827L75.1211 17.24C77.4318 14.7186 81.2175 12.0918 85.5773 12.0918C90.78 12.0918 94.4058 14.7186 94.4058 20.7096V35.264C94.4058 37.68 95.7174 37.9416 98.1371 38.2577V40.9898H82.9506V38.2577C85.3666 37.9416 86.6309 37.68 86.6309 35.264V21.7015H86.6273Z"
+            fill="#3D95FF" />
+          <path
+            d="M116.525 35.6122C115.289 36.1245 113.938 36.5169 112.608 36.5169C109.876 36.5169 108.67 35.2562 108.67 32.0009V16.026H116.55V12.6108H108.67V6.30734H106.148C103.362 9.61713 100.107 12.2439 96.8513 13.6608V16.026H100.895V33.4687C100.895 39.4597 104.732 41.5088 108.935 41.5088C112.623 41.5088 115.348 39.9938 117.284 38.1881C116.979 37.4216 116.714 36.5678 116.528 35.6122H116.525Z"
+            fill="#3D95FF" />
+          <path
+            d="M147.412 36.5169C146.623 36.7276 145.573 36.8329 145.101 36.8329C143.524 36.8329 143.052 35.5722 143.052 33.2579V22.9107C143.052 14.5545 138.481 12.0876 131.233 12.0876C124.719 12.0876 119.724 14.609 119.724 19.3357C119.724 20.8072 120.356 21.9116 121.511 22.5438L127.081 21.8063C126.87 20.5964 126.714 19.5465 126.714 18.7036C126.714 16.4438 127.924 15.1831 130.234 15.1831C133.544 15.1831 135.277 17.5991 135.277 21.8535V34.515C133.544 35.7757 131.967 36.5641 129.969 36.5641C127.658 36.5641 126.132 34.9873 126.132 32.4659C126.132 30.5222 126.921 29.5231 128.708 28.84L132.745 27.4849V24.6292L125.555 26.8454C115.12 29.9627 117.714 41.3998 126.027 41.3998C130.285 41.3998 133.49 38.9838 135.433 36.8293C136.378 39.6668 138.006 41.5052 141.105 41.5052C143.521 41.5052 146.097 40.4515 147.939 38.6677L147.412 36.5132V36.5169Z"
+            fill="#3D95FF" />
+        </svg>
+      </div>
+
+      <div class="circles">
+        <div class="circle" id="circle1">
+          <video class="inner_circle" autoplay muted loop>
+            <source src="./movs/4b_crop_V1.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="circle" id="circle2" p>
+          <video class="inner_circle" autoplay muted loop>
+            <source src="./movs/3_crop_V1.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="circle" id="circle3">
+          <video class="inner_circle" autoplay muted loop>
+            <source src="./movs/2_crop_V1.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="circle" id="circle4">
+          <video class="inner_circle" autoplay muted loop>
+            <source src="./movs/1_crop_V1.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="circle" id="circle5">
+          <video class="inner_circle" autoplay muted loop>
+            <source src="./movs/4b_crop_V1.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="circle" id="circle6">
+          <video class="inner_circle" autoplay muted loop>
+            <source src="./movs/3_crop_V1.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="circle" id="circle7">
+          <video class="inner_circle" autoplay muted loop>
+            <source src="./movs/2_crop_V1.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="circle" id="circle8">
+          <video class="inner_circle" autoplay muted loop>
+            <source src="./movs/1_crop_V1.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+
+      <div class="home_left_content">
+        <div class="taglines_slider">
+          <div class="subtagline">Solving business</br>challenges under</br>public scrutiny</div>
+          <div class="subtagline">Engaging a</br>growing set of</br>stakeholders</div>
+          <div class="subtagline">Providing actionable</br>intelligence to inform</br>decision-making</div>
+          <div class="subtagline">Creating</br>understanding in</br>a complex world</div>
+        </div>
+
+        <div class="main_tagline">The world’s first comprehensive data-driven solution for stakeholder management</div>
+      </div>
+    </div>
+  </div>
+  <div class="other">
+  </div>
+</body>
+<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script type="module" src="./gradient.js"></script>
+
+</html>
