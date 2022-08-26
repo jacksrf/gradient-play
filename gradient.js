@@ -15,10 +15,10 @@ $(window).on('load', function() {
     var colorID = $('.circles .circle:nth-child(8)').attr('id')
     var lastID = $('.circles .circle:last').attr('id')
     $('.circles').prepend($('.circles .circle:nth-child(8)'))
-    $('.circles .circle:last').attr('id').addClass('tempLast')
-    // setTimeout(function() {
-    //   $('.circles .circle.tempLast').removeClass('tempLast')
-    // }, 1)
+    $('.circles .circle:last').addClass('tempLast')
+    setTimeout(function() {
+      $('.circles .circle.tempLast').removeClass('tempLast')
+    }, 1)
     $('body').removeClass(lastID)
     $('body').addClass(colorID)
   });
