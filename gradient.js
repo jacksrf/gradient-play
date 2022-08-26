@@ -14,8 +14,8 @@ $(window).on('load', function() {
   $('.taglines_slider').on('beforeChange', function(event, slick, currentSlide, nextSlide){
     var colorID = $('.circles .circle:nth-child(8)').attr('id')
     var lastID = $('.circles .circle:last').attr('id')
-    $('.circles').prepend($('.circles .circle::nth-child(8)'))
-     $('.circles .circle:last').attr('id').addClass('tempLast')
+    $('.circles').prepend($('.circles .circle:nth-child(8)'))
+    $('.circles .circle:last').attr('id').addClass('tempLast')
     // setTimeout(function() {
     //   $('.circles .circle.tempLast').removeClass('tempLast')
     // }, 1)
