@@ -23,9 +23,18 @@ $(window).on('load', function() {
   //   $('body').addClass(newID)
   // })
 
-  // $('.taglines_slider').on('init', function(event, slick, direction){
-  //   $('.taglines_slider').addClass('show')
-  // });
+  $('.taglines_slider').on('init', function(event, slick, direction){
+    // console.log(nextSlide);
+    console.log('NEXT')
+    var lastID = $('.circles .circle:first').attr('id')
+    var newID = $('.circles .circle:last').attr('id')
+    $('.circles').prepend($('.circles .circle:last').addClass('tempLast'))
+    setTimeout(function() {
+      $('.circles .circle.tempLast').removeClass('tempLast')
+    }, 1)
+    $('body').removeClass(lastID)
+    $('body').addClass(newID)
+  });
 
   $('.taglines_slider').on('beforeChange', function(event, slick, currentSlide, nextSlide){
     console.log(nextSlide);
@@ -42,5 +51,5 @@ $(window).on('load', function() {
 
   $('.taglines_slider').addClass('show')
   $('.main_tagline').addClass('show')
-  
+
 })
