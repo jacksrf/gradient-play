@@ -26,6 +26,9 @@ $(window).on('load', function() {
     }, 1)
     $('body').removeClass(newID)
     $('body').addClass(colorID)
+    setTimeout(function(){
+      $('.circles .circle:last').css('opacity','0')
+    }, 1000)
   });
 
   $('.taglines_slider').addClass('show')
